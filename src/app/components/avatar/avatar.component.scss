@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  img {
+    height: 190px;
+    width: 130px;
+    border: black solid 1px;
+  }
+  img:hover {
+    border: yellow solid 1px;
+  }
+}

@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 95vh;
+}
+
+.interface {
+  display: flex;
+  flex-flow: column;
+}
+.information {
+  display: flex;
+  flex-flow: row;
+
+  .information_mercenary-info {
+    display: flex;
+    width: 30%;
+    border: white solid 1px;
+  }
+
+  .information_combat-log {
+    display: flex;
+    width: 40%;
+    border: white solid 1px;
+  }
+
+  .information_enemy-info {
+    display: flex;
+    width: 30%;
+    border: white solid 1px;
+  }
+}

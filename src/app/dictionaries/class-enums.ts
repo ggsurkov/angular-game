@@ -1,0 +1,17 @@
+export enum ClassEnums {
+  Arcanist = 'Arcanist',
+  Catcher = 'Catcher',
+  Sandstone = 'Sandstone',
+  Engineer = 'Engineer',
+  Bombardier = 'Bombardier',
+  Golem = 'Golem',
+  Metalworker = 'Metalworker',
+  Drummer = 'Drummer',
+  Growlman = 'Growlman',
+  SoloSoldier = 'SoloSoldier',
+  Alchemist = 'Alchemist',
+  Kitsune = 'Kitsune',
+  Paladin = 'Paladin',
+  Priest = 'Priest',
+  Alar = 'Alar',
+}
