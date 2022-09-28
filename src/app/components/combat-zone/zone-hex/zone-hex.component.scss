@@ -1,0 +1,21 @@
+@import "src/app/styles/colors";
+@import "src/app/styles/sizes";
+
+.hex-out {
+  height: $zone-hex-size;
+  width: $zone-hex-size;
+  background: $zone-hex-main-color;
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.hex-inner {
+  background: $zone-hex-main-border-color;
+  -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  height: $zone-hex-size - $zone-hex-border;
+  width: $zone-hex-size - $zone-hex-border;
+  position: relative;
+  left: $zone-hex-border/2;
+  top: $zone-hex-border/2;
+}

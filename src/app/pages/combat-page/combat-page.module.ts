@@ -1,17 +1,17 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CombatPageComponent } from './combat-page.component';
-import {AvatarComponent} from '../../components/avatar/avatar.component';
-import {CombatInterfaceComponent} from '../../components/combat-interface/combat-interface.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {CombatPageComponent} from './combat-page.component';
 import {CombatPageRoutingModule} from './combat-page-routing.module';
-
+import {ComponentsModule} from '../../components/components.module';
 
 
 @NgModule({
-  declarations: [CombatPageComponent, AvatarComponent, CombatInterfaceComponent],
+  declarations: [CombatPageComponent],
   imports: [
     CommonModule,
+    ComponentsModule,
     CombatPageRoutingModule
   ]
 })
-export class CombatPageModule { }
+export class CombatPageModule {
+}

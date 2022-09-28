@@ -1,0 +1,10 @@
+@import "src/app/styles/sizes";
+
+.row-line {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &.shift {
+    margin-left: $zone-hex-size/2
+  }
+}
