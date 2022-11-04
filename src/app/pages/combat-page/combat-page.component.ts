@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CombatPageComponent implements OnInit {
 
   public imgUrls = [
-    '../assets/avatars/archer.png',
+    './assets/avatars/archer.png',
     '../assets/avatars/warrior.png',
     '../assets/avatars/sorcery.jpg',
     '../assets/avatars/enemy01.jpg',

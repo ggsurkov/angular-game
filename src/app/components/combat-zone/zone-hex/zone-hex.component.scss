@@ -18,4 +18,8 @@
   position: relative;
   left: $zone-hex-border/2;
   top: $zone-hex-border/2;
+
+  img {
+    width: inherit;
+  }
 }
