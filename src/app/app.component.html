@@ -1,5 +1,5 @@
-<div class="main-menu">
-  <button *ngIf="!(gameStatus$ | async)?.isCombat" routerLink="combat-page" (click)="enterCombat()"> FIGHT! </button>
-  <button *ngIf="(gameStatus$ | async)?.isCombat" routerLink="/" (click)="menu()"> MENU </button>
-</div>
+<!--<div class="main-menu">-->
+<!--  <button *ngIf="!(gameStatus$ | async)?.isCombat" routerLink="combat-page" (click)="enterCombat()"> FIGHT! </button>-->
+<!--  <button *ngIf="(gameStatus$ | async)?.isCombat" routerLink="/" (click)="menu()"> MENU </button>-->
+<!--</div>-->
 <router-outlet></router-outlet>

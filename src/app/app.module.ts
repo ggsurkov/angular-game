@@ -8,7 +8,7 @@ import {NgxGoogleAnalyticsModule} from 'ngx-google-analytics';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
