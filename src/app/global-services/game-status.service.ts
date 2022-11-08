@@ -14,9 +14,11 @@ export class GameStatusService {
   get gameStatus$(): Observable<IGameStatus> {
     return this._gameStatus$.asObservable();
   }
+  constructor() {
+    this.setGameStatus$({isCombat: false})
+  }
 
   public setGameStatus$(gameStatus: IGameStatus) {
     this._gameStatus$.next(gameStatus);
   }
-  constructor() { }
 }

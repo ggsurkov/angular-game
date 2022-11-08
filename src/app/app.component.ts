@@ -9,18 +9,7 @@ import {GameStatusService, IGameStatus} from './global-services/game-status.serv
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public gameStatus$: Observable<IGameStatus>
-  constructor(private router: Router, private gameStatusService: GameStatusService) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.gameStatus$ = this.gameStatusService.gameStatus$;
-  }
-
-  public enterCombat() {
-    this.gameStatusService.setGameStatus$({isCombat: true});
-  }
-
-  public menu() {
-    this.gameStatusService.setGameStatus$({isCombat: false});
-  }
+  ngOnInit() {}
 }

@@ -1,0 +1,26 @@
+:host {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 95vh;
+}
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.action-btn {
+  display: flex;
+  justify-content: center;
+  button {
+    padding: 10px 40px;
+    font-size: x-large;
+    font-weight: bold;
+    border: gray solid 2px;
+    background-color: lightgray;
+  }
+}
+footer {
+  display: flex;
+}
