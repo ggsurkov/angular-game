@@ -3,7 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 const mainRoutes: Routes = [
   {
+    path: '', redirectTo: '/landing', pathMatch: 'full',
+  },
+  {
+    path: '**', loadComponent: () => import('./pages/not-found/not-found.component').then(m => m.NotFoundComponent),
+  },
+  {
     path: 'combat-page', loadChildren: () => import('./pages/combat-page/combat-page.module').then(m => m.CombatPageModule),
+  },
+  {
+    path: 'landing', loadComponent: () => import('./pages/landing-page/landing-page.component').then(m => m.LandingPageComponent),
   },
 ];
 
